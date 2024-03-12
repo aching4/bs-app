@@ -8,8 +8,11 @@ Bill Splitter iOS App
 |      #3      |    Edmund Huang   |     ehuang6@sfsu.edu   |    EdmUUUndo    |
 |      #4      |     Suzanna Li    |      sli47@sfsu.edu    |     suza-li     |
 
+
 ## Proposal
+
 ### Must-Have Features
+
 | Priority | Features |
 | :------: | :------: |
 | <span style="border-radius: 8px; background: #FFCFC9; color: #C22E2D; padding: 0px 6px 2px 6px;">High</span> | Input items from the receipt including but not limited to the price and name of the item. |
@@ -21,3 +24,13 @@ Bill Splitter iOS App
 | <span style="border-radius: 8px; background: #FFE5A0; color: #473821; padding: 0px 6px;">Medium</span> | Have paid and not paid section |
 | <span style="border-radius: 8px; background: #FFE5A0; color: #473821; padding: 0px 6px;">Medium</span> | Take a picture of the receipt and automatically have it itemized (Receipt OCI). |
 | <span style="border-radius: 8px; background: #E6CFF2; color: #5A3286; padding: 0px 6px;">Low</span> | Name of the bill: Rent, restaurant, etc. |
+
+### Nice-To-Have Features
+
+| Probability | Features |
+| :---------: | :------: |
+| <span style="border-radius: 8px; background: #11734B; color: #D4EDBC; padding: 0px 6px 2px 6px;">Likely</span> | URL schema to be compatible with a web version |
+| <span style="border-radius: 8px; background: #11734B; color: #D4EDBC; padding: 0px 6px 2px 6px;">Likely</span> | Cute stickers we can add (Nice UI) |
+| <span style="border-radius: 8px; background: #11734B; color: #D4EDBC; padding: 0px 6px 2px 6px;">Likely</span> | Backgrounds/themes |
+| <span style="border-radius: 8px; background: #FFE5A0; color: #473821; padding: 0px 6px 2px 6px;">Maybe</span> | Integrate Zelle/PayPal so people can be quickly paid back?  |
+| <span style="border-radius: 8px; background: #FFE5A0; color: #473821; padding: 0px 6px 2px 6px;">Maybe</span> | Have a tag for which payment method? |
