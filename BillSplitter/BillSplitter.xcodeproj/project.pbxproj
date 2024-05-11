@@ -8,9 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		2B24D5CE2BEFDF28003C7ED2 /* BillSplitterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B24D5CD2BEFDF28003C7ED2 /* BillSplitterApp.swift */; };
-		2B24D5D02BEFDF28003C7ED2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B24D5CF2BEFDF28003C7ED2 /* ContentView.swift */; };
+		2B24D5D02BEFDF28003C7ED2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B24D5CF2BEFDF28003C7ED2 /* HomeView.swift */; };
 		2B24D5D22BEFDF2A003C7ED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B24D5D12BEFDF2A003C7ED2 /* Assets.xcassets */; };
 		2B24D5D52BEFDF2A003C7ED2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B24D5D42BEFDF2A003C7ED2 /* Preview Assets.xcassets */; };
+		2BC6F4B22BF00CD200FE4D4D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4B12BF00CD200FE4D4D /* LoginView.swift */; };
+		2BC6F4B42BF00CE100FE4D4D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4B32BF00CE100FE4D4D /* LoginViewModel.swift */; };
+		2BC6F4B62BF00ECD00FE4D4D /* AddFriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4B52BF00ECD00FE4D4D /* AddFriendView.swift */; };
+		2BC6F4B82BF00EF400FE4D4D /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4B72BF00EF400FE4D4D /* FriendsView.swift */; };
+		2BC6F4BA2BF00F0300FE4D4D /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4B92BF00F0300FE4D4D /* GroupsView.swift */; };
+		2BC6F4BC2BF00F0F00FE4D4D /* AddGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4BB2BF00F0F00FE4D4D /* AddGroupView.swift */; };
+		2BC6F4BE2BF00F2000FE4D4D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4BD2BF00F2000FE4D4D /* ProfileView.swift */; };
+		2BC6F4C02BF00F3500FE4D4D /* AddBillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4BF2BF00F3500FE4D4D /* AddBillView.swift */; };
+		2BC6F4C22BF00F4E00FE4D4D /* BillDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4C12BF00F4E00FE4D4D /* BillDashboardView.swift */; };
+		2BC6F4C52BF00F9B00FE4D4D /* IndividualBillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4C42BF00F9B00FE4D4D /* IndividualBillView.swift */; };
+		2BC6F4C72BF00FFC00FE4D4D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4C62BF00FFC00FE4D4D /* HomeViewModel.swift */; };
+		2BC6F4C92BF0100C00FE4D4D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4C82BF0100C00FE4D4D /* RegisterView.swift */; };
+		2BC6F4CB2BF0101800FE4D4D /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4CA2BF0101800FE4D4D /* RegisterViewModel.swift */; };
+		2BC6F4CD2BF0102500FE4D4D /* FriendsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4CC2BF0102500FE4D4D /* FriendsViewModel.swift */; };
+		2BC6F4CF2BF0103100FE4D4D /* AddFriendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4CE2BF0103100FE4D4D /* AddFriendViewModel.swift */; };
+		2BC6F4D12BF0103C00FE4D4D /* GroupsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4D02BF0103C00FE4D4D /* GroupsViewModel.swift */; };
+		2BC6F4D32BF0104F00FE4D4D /* AddGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4D22BF0104F00FE4D4D /* AddGroupViewModel.swift */; };
+		2BC6F4D52BF0106A00FE4D4D /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4D42BF0106A00FE4D4D /* ProfileViewModel.swift */; };
+		2BC6F4D72BF0107D00FE4D4D /* AddBillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4D62BF0107D00FE4D4D /* AddBillViewModel.swift */; };
+		2BC6F4D92BF0108D00FE4D4D /* BillDashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4D82BF0108D00FE4D4D /* BillDashboardViewModel.swift */; };
+		2BC6F4DB2BF0109A00FE4D4D /* IndividualBillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4DA2BF0109A00FE4D4D /* IndividualBillViewModel.swift */; };
+		2BC6F4E02BF01E7D00FE4D4D /* NavbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4DF2BF01E7D00FE4D4D /* NavbarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,11 +55,33 @@
 /* Begin PBXFileReference section */
 		2B24D5CA2BEFDF28003C7ED2 /* BillSplitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillSplitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B24D5CD2BEFDF28003C7ED2 /* BillSplitterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillSplitterApp.swift; sourceTree = "<group>"; };
-		2B24D5CF2BEFDF28003C7ED2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2B24D5CF2BEFDF28003C7ED2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2B24D5D12BEFDF2A003C7ED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B24D5D42BEFDF2A003C7ED2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2B24D5DA2BEFDF2A003C7ED2 /* BillSplitterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillSplitterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B24D5E42BEFDF2A003C7ED2 /* BillSplitterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillSplitterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BC6F4B12BF00CD200FE4D4D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2BC6F4B32BF00CE100FE4D4D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		2BC6F4B52BF00ECD00FE4D4D /* AddFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendView.swift; sourceTree = "<group>"; };
+		2BC6F4B72BF00EF400FE4D4D /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
+		2BC6F4B92BF00F0300FE4D4D /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
+		2BC6F4BB2BF00F0F00FE4D4D /* AddGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupView.swift; sourceTree = "<group>"; };
+		2BC6F4BD2BF00F2000FE4D4D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		2BC6F4BF2BF00F3500FE4D4D /* AddBillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillView.swift; sourceTree = "<group>"; };
+		2BC6F4C12BF00F4E00FE4D4D /* BillDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDashboardView.swift; sourceTree = "<group>"; };
+		2BC6F4C42BF00F9B00FE4D4D /* IndividualBillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualBillView.swift; sourceTree = "<group>"; };
+		2BC6F4C62BF00FFC00FE4D4D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		2BC6F4C82BF0100C00FE4D4D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		2BC6F4CA2BF0101800FE4D4D /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		2BC6F4CC2BF0102500FE4D4D /* FriendsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewModel.swift; sourceTree = "<group>"; };
+		2BC6F4CE2BF0103100FE4D4D /* AddFriendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewModel.swift; sourceTree = "<group>"; };
+		2BC6F4D02BF0103C00FE4D4D /* GroupsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewModel.swift; sourceTree = "<group>"; };
+		2BC6F4D22BF0104F00FE4D4D /* AddGroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupViewModel.swift; sourceTree = "<group>"; };
+		2BC6F4D42BF0106A00FE4D4D /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		2BC6F4D62BF0107D00FE4D4D /* AddBillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillViewModel.swift; sourceTree = "<group>"; };
+		2BC6F4D82BF0108D00FE4D4D /* BillDashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDashboardViewModel.swift; sourceTree = "<group>"; };
+		2BC6F4DA2BF0109A00FE4D4D /* IndividualBillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualBillViewModel.swift; sourceTree = "<group>"; };
+		2BC6F4DF2BF01E7D00FE4D4D /* NavbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavbarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +150,18 @@
 		2BC6F4AD2BEFE1FB00FE4D4D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2B24D5CF2BEFDF28003C7ED2 /* ContentView.swift */,
+				2BC6F4DE2BF01E6700FE4D4D /* Componenets */,
+				2B24D5CF2BEFDF28003C7ED2 /* HomeView.swift */,
+				2BC6F4B12BF00CD200FE4D4D /* LoginView.swift */,
+				2BC6F4C82BF0100C00FE4D4D /* RegisterView.swift */,
+				2BC6F4B72BF00EF400FE4D4D /* FriendsView.swift */,
+				2BC6F4B52BF00ECD00FE4D4D /* AddFriendView.swift */,
+				2BC6F4B92BF00F0300FE4D4D /* GroupsView.swift */,
+				2BC6F4BB2BF00F0F00FE4D4D /* AddGroupView.swift */,
+				2BC6F4BD2BF00F2000FE4D4D /* ProfileView.swift */,
+				2BC6F4BF2BF00F3500FE4D4D /* AddBillView.swift */,
+				2BC6F4C12BF00F4E00FE4D4D /* BillDashboardView.swift */,
+				2BC6F4C42BF00F9B00FE4D4D /* IndividualBillView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -114,6 +169,17 @@
 		2BC6F4AE2BEFE20500FE4D4D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				2BC6F4C62BF00FFC00FE4D4D /* HomeViewModel.swift */,
+				2BC6F4B32BF00CE100FE4D4D /* LoginViewModel.swift */,
+				2BC6F4CA2BF0101800FE4D4D /* RegisterViewModel.swift */,
+				2BC6F4CC2BF0102500FE4D4D /* FriendsViewModel.swift */,
+				2BC6F4CE2BF0103100FE4D4D /* AddFriendViewModel.swift */,
+				2BC6F4D02BF0103C00FE4D4D /* GroupsViewModel.swift */,
+				2BC6F4D22BF0104F00FE4D4D /* AddGroupViewModel.swift */,
+				2BC6F4D42BF0106A00FE4D4D /* ProfileViewModel.swift */,
+				2BC6F4D62BF0107D00FE4D4D /* AddBillViewModel.swift */,
+				2BC6F4D82BF0108D00FE4D4D /* BillDashboardViewModel.swift */,
+				2BC6F4DA2BF0109A00FE4D4D /* IndividualBillViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -132,6 +198,14 @@
 				2B24D5CD2BEFDF28003C7ED2 /* BillSplitterApp.swift */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		2BC6F4DE2BF01E6700FE4D4D /* Componenets */ = {
+			isa = PBXGroup;
+			children = (
+				2BC6F4DF2BF01E7D00FE4D4D /* NavbarView.swift */,
+			);
+			path = Componenets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +338,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B24D5D02BEFDF28003C7ED2 /* ContentView.swift in Sources */,
+				2BC6F4B82BF00EF400FE4D4D /* FriendsView.swift in Sources */,
+				2BC6F4CB2BF0101800FE4D4D /* RegisterViewModel.swift in Sources */,
+				2BC6F4D12BF0103C00FE4D4D /* GroupsViewModel.swift in Sources */,
+				2BC6F4BE2BF00F2000FE4D4D /* ProfileView.swift in Sources */,
+				2BC6F4C52BF00F9B00FE4D4D /* IndividualBillView.swift in Sources */,
+				2BC6F4D32BF0104F00FE4D4D /* AddGroupViewModel.swift in Sources */,
+				2BC6F4C92BF0100C00FE4D4D /* RegisterView.swift in Sources */,
+				2BC6F4B42BF00CE100FE4D4D /* LoginViewModel.swift in Sources */,
+				2BC6F4E02BF01E7D00FE4D4D /* NavbarView.swift in Sources */,
+				2BC6F4B22BF00CD200FE4D4D /* LoginView.swift in Sources */,
+				2BC6F4DB2BF0109A00FE4D4D /* IndividualBillViewModel.swift in Sources */,
+				2B24D5D02BEFDF28003C7ED2 /* HomeView.swift in Sources */,
+				2BC6F4CD2BF0102500FE4D4D /* FriendsViewModel.swift in Sources */,
+				2BC6F4C02BF00F3500FE4D4D /* AddBillView.swift in Sources */,
+				2BC6F4B62BF00ECD00FE4D4D /* AddFriendView.swift in Sources */,
+				2BC6F4C72BF00FFC00FE4D4D /* HomeViewModel.swift in Sources */,
+				2BC6F4D72BF0107D00FE4D4D /* AddBillViewModel.swift in Sources */,
+				2BC6F4D52BF0106A00FE4D4D /* ProfileViewModel.swift in Sources */,
+				2BC6F4BA2BF00F0300FE4D4D /* GroupsView.swift in Sources */,
+				2BC6F4BC2BF00F0F00FE4D4D /* AddGroupView.swift in Sources */,
+				2BC6F4D92BF0108D00FE4D4D /* BillDashboardViewModel.swift in Sources */,
+				2BC6F4CF2BF0103100FE4D4D /* AddFriendViewModel.swift in Sources */,
 				2B24D5CE2BEFDF28003C7ED2 /* BillSplitterApp.swift in Sources */,
+				2BC6F4C22BF00F4E00FE4D4D /* BillDashboardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
