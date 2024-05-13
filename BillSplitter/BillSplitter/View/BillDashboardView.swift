@@ -5,77 +5,60 @@
 //  Created by Ashley C on 5/11/24.
 //
 
-import Foundation
 import SwiftUI
 
 struct BillDashboardView: View {
-    let billName: String = "Bill Name"
-    let establishmentName: String = "Name of Establishment"
-    let totalAmount: Double = 120.0 // example total
-
-    // Sample data for friends and amounts they owe
-    var friends: [Friend] = [
-        Friend(name: "Alice", oweAmount: 20.0, hasPaid: true),
-        Friend(name: "Bob", oweAmount: 30.0, hasPaid: false),
-        Friend(name: "Charlie", oweAmount: 25.0, hasPaid: true),
-        Friend(name: "David", oweAmount: 45.0, hasPaid: false)
-    ]
+    @StateObject private var viewModel = BillDashboardViewModel()
+    @StateObject private var viewModel1 = AddBillViewModel() 
 
     var body: some View {
-        NavigationView {
-            VStack {
-                Text(billName).font(.headline)
-                Text(establishmentName).font(.subheadline)
-                Text("Total: $\(totalAmount, specifier: "%.2f")").bold()
-                List {
-                    ForEach(friends) { friend in
-                        HStack {
-                            Text(friend.name)
-                            Spacer()
-                            Text("Owe: $\(friend.oweAmount, specifier: "%.2f")")
-                            Spacer()
-                            PaymentStatusView(hasPaid: friend.hasPaid)
-                        }
+        VStack {
+            // Bill header information
+            Text(viewModel.billName).font(.title)
+            Text(viewModel.establishmentName).font(.subheadline)
+            Text("Total: \(viewModel.totalAmount, specifier: "%.2f") $").font(.headline)
+            
+            // List of friends and the amount they owe
+            List(viewModel.friends) { friend in
+                HStack {
+                    VStack(alignment: .leading) {
+                        Text(friend.name)
+                        Text("Owe: $\(friend.amountOwed, specifier: "%.2f")")
                     }
+                    Spacer()
+                    PaidStatusView(hasPaid: friend.hasPaid)
                 }
             }
-            .navigationTitle("Bill Summary")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {
-                        // Action for adding new items/friends
-                    }) {
-                        Image(systemName: "plus")
-                    }
-                }
+            .listStyle(PlainListStyle())
+
+            Spacer()
+            
+            // Add new friend button
+            Button(action: {
+                // Implement add new friend logic
+            }) {
+                Image(systemName: "plus")
             }
+            .padding()
+
+            // Bottom navigation bar
+            HStack {
+                Image(systemName: "house")
+                Spacer()
+                Image(systemName: "person.2")
+                Spacer()
+                Image(systemName: "person.3")
+                Spacer()
+                Image(systemName: "person.crop.circle")
+            }
+            .padding()
+            .background(Color.gray.opacity(0.2))
         }
     }
 }
 
-struct Friend: Identifiable {
-    let id = UUID()
-    let name: String
-    let oweAmount: Double
-    let hasPaid: Bool
-}
-
-struct PaymentStatusView: View {
-    var hasPaid: Bool
-    var body: some View {
-        if hasPaid {
-            Image(systemName: "checkmark.circle.fill").foregroundColor(.green)
-        } else {
-            Image(systemName: "xmark.circle.fill").foregroundColor(.red)
-        }
-    }
-}
-
-@main
-struct BillApp: App {
-    var body: some Scene {
-        WindowGroup {
-            BillSummaryView()
-        }
+struct BillDashboardView_Previews: PreviewProvider {
+    static var previews: some View {
+        BillDashboardView()
     }
 }

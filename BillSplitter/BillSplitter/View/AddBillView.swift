@@ -5,18 +5,26 @@
 //  Created by Ashley C on 5/11/24.
 //
 
-import SwiftUI
-
 struct AddBillView: View {
     @StateObject private var viewModel = AddBillViewModel()
+    @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
         NavigationView {
             List {
                 Section(header: Text("Bill Info")) {
-                    TextField("Bill Title", text: $viewModel.billTitle)
-                    TextField("Name of Place", text: $viewModel.placeName)
-                    Picker("Group Name", selection: $viewModel.groupName) {
+                    TextField("Bill Title", text: Binding(
+                        get: { viewModel.billTitle },
+                        set: { viewModel.addBillTitle($0) }
+                    ))
+                    TextField("Name of Place", text: Binding(
+                        get: { viewModel.placeName },
+                        set: { viewModel.addPlaceName($0) }
+                    ))
+                    Picker("Group Name", selection: Binding(
+                        get: { viewModel.groupName },
+                        set: { viewModel.addGroupName($0) }
+                    )) {
                         ForEach(viewModel.groups, id: \.self) { group in
                             Text(group)
                         }
@@ -45,9 +53,10 @@ struct AddBillView: View {
             }
             .navigationBarTitle("Add Bill", displayMode: .inline)
             .navigationBarItems(leading: Button("Cancel") {
-                // Cancel action -NEEDS IMPLEMENTATION
+                presentationMode.wrappedValue.dismiss()
             }, trailing: Button("Save") {
-                // Save action -NEEDS IMPLEMENTATION
+                // Implement save functionality or call a viewModel function to save data
+                presentationMode.wrappedValue.dismiss()
             })
         }
     }
@@ -58,3 +67,4 @@ struct AddBillView_Previews: PreviewProvider {
         AddBillView()
     }
 }
+

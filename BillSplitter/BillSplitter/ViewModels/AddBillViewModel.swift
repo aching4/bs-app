@@ -24,6 +24,18 @@ class AddBillViewModel: ObservableObject {
             friendsShares[index].items.append(BillItem(itemName: "", price: 0))
         }
     }
+
+    func addPlaceName(_ name: String){
+        placeName = name
+    }
+
+    func addGroupName(_ group: String){
+        groupName = group
+    }
+
+    func addBillTitle(_ title: String){
+        billTitle = title
+    }
 }
 
 
