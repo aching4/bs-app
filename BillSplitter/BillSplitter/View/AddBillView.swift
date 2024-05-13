@@ -5,88 +5,50 @@
 //  Created by Ashley C on 5/11/24.
 //
 
-import Foundation
 import SwiftUI
 
 struct AddBillView: View {
-    @State private var billTitle: String = ""
-    @State private var placeName: String = ""
-    @State private var groupName: String = ""
-    @State private var groups: [String] = ["Family", "Friends", "Work"] // Example groups
-    @State private var friends: [String] = ["Alice", "Bob", "Charlie"] // Example friends
-    
+    @StateObject private var viewModel = AddBillViewModel()
+
     var body: some View {
         NavigationView {
-            Form {
+            List {
                 Section(header: Text("Bill Info")) {
-                    TextField("Bill Title", text: $billTitle)
-                    TextField("Name of Place", text: $placeName)
-                    Picker("Group Name", selection: $groupName) {
-                        ForEach(groups, id: \.self) {
-                            Text($0)
+                    TextField("Bill Title", text: $viewModel.billTitle)
+                    TextField("Name of Place", text: $viewModel.placeName)
+                    Picker("Group Name", selection: $viewModel.groupName) {
+                        ForEach(viewModel.groups, id: \.self) { group in
+                            Text(group)
                         }
                     }
                 }
-                
-                Section(header: Text("Items")) {
-                    ForEach(0..<5) { _ in // Example for 5 items
-                        HStack {
-                            TextField("Item Name", text: .constant(""))
-                            Spacer()
-                            TextField("$", text: .constant(""))
+
+                ForEach(viewModel.friendsShares.indices, id: \.self) { index in
+                    Section(header: Text(viewModel.friendsShares[index].name)) {
+                        ForEach(viewModel.friendsShares[index].items.indices, id: \.self) { itemIndex in
+                            HStack {
+                                TextField("Dish Name", text: $viewModel.friendsShares[index].items[itemIndex].itemName)
+                                Spacer()
+                                TextField("$", value: $viewModel.friendsShares[index].items[itemIndex].price, formatter: NumberFormatter())
+                            }
+                        }
+                        Button("Add Item") {
+                            viewModel.addItem(for: viewModel.friendsShares[index])
                         }
                     }
-                    Button(action: {
-                        // Action to take a picture
-                    }) {
-                        Text("Take A Picture")
-                    }
                 }
-                
-                Section(header: Text("Shares")) {
-                    ForEach(friends, id: \.self) { friend in
-                        PersonShareView(friendName: friend)
-                    }
-                }
-                
-                Button(action: {
-                    // Action to add more people/dishes
-                }) {
-                    Image(systemName: "plus")
-                    Text("Add More")
+                Button(action: viewModel.addNewFriend) {
+                    Label("Add New Friend", systemImage: "plus.circle.fill")
+                        .font(.headline)
+                        .foregroundColor(.blue)
                 }
             }
             .navigationBarTitle("Add Bill", displayMode: .inline)
             .navigationBarItems(leading: Button("Cancel") {
-                // Action to cancel
+                // Cancel action -NEEDS IMPLEMENTATION
             }, trailing: Button("Save") {
-                // Action to save the bill
+                // Save action -NEEDS IMPLEMENTATION
             })
-        }
-    }
-}
-
-struct PersonShareView: View {
-    var friendName: String
-    @State private var total: String = ""
-    
-    var body: some View {
-        VStack(alignment: .leading) {
-            Text(friendName).font(.headline)
-            ForEach(0..<3) { _ in // Example for 3 dishes
-                HStack {
-                    TextField("Dish Name", text: .constant(""))
-                    Spacer()
-                    TextField("$", text: .constant(""))
-                }
-            }
-            HStack {
-                TextField("Tax", text: .constant(""))
-                Spacer()
-                TextField("Tip", text: .constant(""))
-                Spacer()
-                TextField("Total", text: $total)
-            }
         }
     }
 }
@@ -96,4 +58,3 @@ struct AddBillView_Previews: PreviewProvider {
         AddBillView()
     }
 }
-
