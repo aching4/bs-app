@@ -9,15 +9,22 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
+                Text("Hello, world!")
+                NavigationLink("Register", destination: RegisterView())
+            }
+            .padding()
+            
         }
-        .padding()
     }
+    
 }
+
+
 
 #Preview {
     HomeView()

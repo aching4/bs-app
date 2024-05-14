@@ -33,6 +33,7 @@
 		2BC6F4D92BF0108D00FE4D4D /* BillDashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4D82BF0108D00FE4D4D /* BillDashboardViewModel.swift */; };
 		2BC6F4DB2BF0109A00FE4D4D /* IndividualBillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4DA2BF0109A00FE4D4D /* IndividualBillViewModel.swift */; };
 		2BC6F4E02BF01E7D00FE4D4D /* NavbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4DF2BF01E7D00FE4D4D /* NavbarView.swift */; };
+		2BC6F4E32BF0365A00FE4D4D /* NavbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6F4E22BF0365A00FE4D4D /* NavbarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		2BC6F4D82BF0108D00FE4D4D /* BillDashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDashboardViewModel.swift; sourceTree = "<group>"; };
 		2BC6F4DA2BF0109A00FE4D4D /* IndividualBillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualBillViewModel.swift; sourceTree = "<group>"; };
 		2BC6F4DF2BF01E7D00FE4D4D /* NavbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavbarView.swift; sourceTree = "<group>"; };
+		2BC6F4E22BF0365A00FE4D4D /* NavbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavbarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 		2BC6F4AE2BEFE20500FE4D4D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				2BC6F4E12BF0364400FE4D4D /* Componenets */,
 				2BC6F4C62BF00FFC00FE4D4D /* HomeViewModel.swift */,
 				2BC6F4B32BF00CE100FE4D4D /* LoginViewModel.swift */,
 				2BC6F4CA2BF0101800FE4D4D /* RegisterViewModel.swift */,
@@ -204,6 +207,14 @@
 			isa = PBXGroup;
 			children = (
 				2BC6F4DF2BF01E7D00FE4D4D /* NavbarView.swift */,
+			);
+			path = Componenets;
+			sourceTree = "<group>";
+		};
+		2BC6F4E12BF0364400FE4D4D /* Componenets */ = {
+			isa = PBXGroup;
+			children = (
+				2BC6F4E22BF0365A00FE4D4D /* NavbarViewModel.swift */,
 			);
 			path = Componenets;
 			sourceTree = "<group>";
@@ -348,6 +359,7 @@
 				2BC6F4B42BF00CE100FE4D4D /* LoginViewModel.swift in Sources */,
 				2BC6F4E02BF01E7D00FE4D4D /* NavbarView.swift in Sources */,
 				2BC6F4B22BF00CD200FE4D4D /* LoginView.swift in Sources */,
+				2BC6F4E32BF0365A00FE4D4D /* NavbarViewModel.swift in Sources */,
 				2BC6F4DB2BF0109A00FE4D4D /* IndividualBillViewModel.swift in Sources */,
 				2B24D5D02BEFDF28003C7ED2 /* HomeView.swift in Sources */,
 				2BC6F4CD2BF0102500FE4D4D /* FriendsViewModel.swift in Sources */,
