@@ -31,7 +31,7 @@ struct GroupsView: View {
         
         //button to add groups
         Spacer()
-        NavigationLink(destination: AddGroupView()) {
+        NavigationLink(destination: HomeView()) {
             Image(systemName: "plus.circle.fill")
                 .resizable()
                 .frame(width: 50, height: 50)
@@ -39,5 +39,11 @@ struct GroupsView: View {
         }
         .padding(.trailing, 20)
         .padding(.bottom, 20)
+    }
+}
+
+struct GroupsView_Previews: PreviewProvider {
+    static var previews: some View {
+        GroupsView()
     }
 }

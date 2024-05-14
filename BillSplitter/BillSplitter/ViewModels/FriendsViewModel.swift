@@ -15,7 +15,7 @@ class FriendsViewModel: ObservableObject {
     
     init() {
         //list of current splits
-        friends = ["Friend 1", "Friend 2"]
+        friends = []
     }
     
     //add bill to current splits

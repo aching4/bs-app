@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import HomeView
 
 struct FriendsView: View {
     
@@ -31,7 +32,7 @@ struct FriendsView: View {
         
         //button to add friends
         Spacer()
-        NavigationLink(destination: AddFriendView()) {
+        NavigationLink(destination: HomeView()) {
             Image(systemName: "plus.circle.fill")
                 .resizable()
                 .frame(width: 50, height: 50)
@@ -39,5 +40,11 @@ struct FriendsView: View {
         }
         .padding(.trailing, 20)
         .padding(.bottom, 20)
+    }
+}
+
+struct FriendsView_Previews: PreviewProvider {
+    static var previews: some View {
+        FriendsView()
     }
 }

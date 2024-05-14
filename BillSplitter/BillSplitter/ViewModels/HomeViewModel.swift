@@ -14,7 +14,7 @@ class HomeViewModel: ObservableObject {
     
     init() {
         //list of current splits
-        currentSplits = ["Bill 1", "Bill 2"]
+        currentSplits = []
     }
     
     //add bill to current splits

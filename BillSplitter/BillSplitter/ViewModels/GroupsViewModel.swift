@@ -15,7 +15,7 @@ class GroupsViewModel: ObservableObject {
     
     init() {
         //list of current splits
-        groups = ["Group 1", "Group 2"]
+        groups = []
     }
     
     //add bill to current splits

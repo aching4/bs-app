@@ -6,6 +6,8 @@
 //  Code by Suzanna L on 5/12/24
 
 import SwiftUI
+import BillDashboardView
+import AddBillView
 
 struct HomeView: View {
     var body: some View {
@@ -56,7 +58,7 @@ struct HomeView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
     }
