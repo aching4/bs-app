@@ -4,6 +4,23 @@
 //
 //  Created by Ashley C on 5/11/24.
 //
+import Foundation
+
+// Define the BillItem struct
+struct BillItem: Identifiable {
+    let id = UUID()
+    var itemName: String
+    var price: Double
+}
+
+// Define the FriendShare struct
+struct FriendShare: Identifiable {
+    let id = UUID()
+    var name: String
+    var items: [BillItem]
+    var tax: Double
+    var tip: Double
+}
 
 class AddBillViewModel: ObservableObject {
     @Published var billTitle: String = ""

@@ -92,6 +92,6 @@ struct DishView: View {
 
 struct PersonDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        PersonDetailView()
+        IndividualBillView()
     }
 }

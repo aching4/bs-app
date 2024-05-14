@@ -3,7 +3,9 @@
 //  BillSplitter
 //
 //  Created by Ashley C on 5/11/24.
-//
+// 
+
+import SwiftUI
 
 struct AddBillView: View {
     @StateObject private var viewModel = AddBillViewModel()
