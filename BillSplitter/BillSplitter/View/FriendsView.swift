@@ -28,5 +28,16 @@ struct FriendsView: View {
             }
         }
         .padding()
+        
+        //button to add friends
+        Spacer()
+        NavigationLink(destination: AddFriendView()) {
+            Image(systemName: "plus.circle.fill")
+                .resizable()
+                .frame(width: 50, height: 50)
+                .foregroundColor(.blue)
+        }
+        .padding(.trailing, 20)
+        .padding(.bottom, 20)
     }
 }

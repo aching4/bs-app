@@ -28,5 +28,16 @@ struct GroupsView: View {
             }
         }
         .padding()
+        
+        //button to add groups
+        Spacer()
+        NavigationLink(destination: AddGroupView()) {
+            Image(systemName: "plus.circle.fill")
+                .resizable()
+                .frame(width: 50, height: 50)
+                .foregroundColor(.blue)
+        }
+        .padding(.trailing, 20)
+        .padding(.bottom, 20)
     }
 }
