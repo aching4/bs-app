@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct FriendsView: View {
+    var body: some View {
+        VStack{
+            Text("Friends View!")
+        }
+    }
+}

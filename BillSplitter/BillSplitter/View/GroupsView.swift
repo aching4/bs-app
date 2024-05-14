@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct GroupsView: View {
+    var body: some View {
+        VStack{
+            Text("Groups View!")
+        }
+    }
+}
