@@ -6,3 +6,20 @@
 //
 
 import Foundation
+import SwiftUI
+
+class GroupsViewModel: ObservableObject {
+    @Published var groups: [String]
+    @Published var isGroup: Bool = false
+    
+    init() {
+        //list of current splits
+        groups = ["Group 1", "Group 2"]
+    }
+    
+    //add bill to current splits
+    func addToGroup(_ groups: String) {
+        self.groups.append(groups)
+    }
+    
+}
