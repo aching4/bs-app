@@ -7,34 +7,54 @@
 
 import SwiftUI
 
-//struct HomeView: View {
-//    var body: some View {
-//        VStack {
-//            Image(systemName: "globe")
-//                .imageScale(.large)
-//                .foregroundStyle(.tint)
-//            Text("Hello, world!")
-//        }
-//        .padding()
-//    }
-//}
-
 struct HomeView: View {
     var body: some View {
         NavigationView {
-            VStack(spacing:20){
-                NavigationLink(destination: HomeView()) {
-                    Text("Home")
-                        .foregroundStyle(.teal)
-                        .font(.title)
+            VStack {
+                //Active Splits
+                List {
+                    Section(header: Text("Active")) {
+                        ForEach(1..<3) { index in
+                            Text("Active \(index)")
+                        }
+                    }
                 }
+                .listStyle(GroupedListStyle())
+                
+                //Past You Owned Splits
+                List {
+                    Section(header: Text("Created By You")) {
+                        ForEach(1..<3) { index in
+                            Text("Past \(index)")
+                        }
+                    }
+                }
+                .listStyle(GroupedListStyle())
+                
+                //Past Other Owned Splits
+                List {
+                    Section(header: Text("Created By Others")) {
+                        ForEach(1..<3) { index in
+                            Text("Past \(index)")
+                        }
+                    }
+                }
+                .listStyle(GroupedListStyle())
+                
+                //button to add bill
+                Spacer()
+                NavigationLink(destination: FriendsView()) {
+                    Image(systemName: "plus.circle.fill")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                        .foregroundColor(.blue)
+                }
+                .padding(.trailing, 20)
+                .padding(.bottom, 20)
             }
-            .navigationBarTitleDisplayMode(/*@START_MENU_TOKEN@*/.automatic/*@END_MENU_TOKEN@*/)
         }
     }
 }
-
-
 
 #Preview {
     HomeView()
