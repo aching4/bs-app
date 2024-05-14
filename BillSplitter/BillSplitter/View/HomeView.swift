@@ -43,7 +43,7 @@ struct HomeView: View {
                 
                 //button to add bill
                 Spacer()
-                NavigationLink(destination: FriendsView()) {
+                NavigationLink(destination: AddBillView()) {
                     Image(systemName: "plus.circle.fill")
                         .resizable()
                         .frame(width: 50, height: 50)

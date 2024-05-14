@@ -6,4 +6,19 @@
 //
 
 import Foundation
+import SwiftUI
 
+class HomeViewModel: ObservableObject {
+    @Published var currentSplits: [String]
+    
+    init() {
+        //list of current splits
+        currentSplits = ["Bill 1", "Bill 2"]
+    }
+    
+    //add bill to current splits
+    func addBill(_ currentSplits: String) {
+        self.currentSplits.append(currentSplits)
+    }
+    
+}

@@ -9,15 +9,24 @@ import Foundation
 import SwiftUI
 
 struct FriendsView: View {
-    //max number of profiles
-    @State private var friendProfiles = [
-        "PF 1", "PF 2", "PF 3", "PF 4",
-        "PF 5", "PF 6", "PF 7", "PF 8",
-        "PF 9", "PF 10", "PF 11", "PF 12"
+    let friendProfile = Array(1...50)
+    
+    var columns: [GridItem] = [
+        GridItem(.adaptive(minimum: 25)) // Minimum item width of 50
     ]
     
     var body: some View {
-        VStack {
+        ScrollView {
+            LazyVGrid(columns: self.columns) {
+                ForEach(friendProfile, id: \.self) { number in
+                    Text("\(number)")
+                        .frame(width: 50, height: 50)
+                        .background(Color.orange)
+                        .foregroundColor(Color.black)
+                        .cornerRadius(25)
+                }
+            }
         }
+        .padding()
     }
 }

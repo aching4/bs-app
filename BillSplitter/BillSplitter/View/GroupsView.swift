@@ -9,9 +9,24 @@ import SwiftUI
 import Foundation
 
 struct GroupsView: View {
+    let groupProfile = Array(1...50)
+    
+    var columns: [GridItem] = [
+        GridItem(.adaptive(minimum: 25)) // Minimum item width of 50
+    ]
+    
     var body: some View {
-        VStack {
-            Text("")
+        ScrollView {
+            LazyVGrid(columns: self.columns) {
+                ForEach(groupProfile, id: \.self) { number in
+                    Text("\(number)")
+                        .frame(width: 50, height: 50)
+                        .background(Color.orange)
+                        .foregroundColor(Color.black)
+                        .cornerRadius(25)
+                }
+            }
         }
+        .padding()
     }
 }
