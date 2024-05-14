@@ -6,3 +6,15 @@
 //
 
 import Foundation
+class ProfileViewModel: ObservableObject {
+    @Published var name = "Hello"
+    @Published var email = "World"
+    
+    init() {
+    }
+    
+    func profile() {
+        
+    }
+    
+}
