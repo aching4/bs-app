@@ -39,7 +39,6 @@ struct AddBillView: View {
                             TextField("URL", text: $url)
                                 .onChange(of: url) {
                                     let info: BundledGoods = urlToEntries(url: url)
-                                    print(info)
                                     sharedData.entries = info.entries
                                     sharedData.fee = info.fee ?? 0
                                     sharedData.tax = info.tax ?? 0
